@@ -1,19 +1,115 @@
-@charset "UTF-8";
-/* For WordPress */
-/*
-Theme Name: 
-Theme URL: http://
-Description: 
-Author: 
-Version: 
-Tags: 
-*/
-
+/* Author: DWP shoheiworks Version: 1.0 */
 /*--------------------------------------------------
 Top Comment
 -------------------------------------------------- */
-
 /* Second Comment
 --------------------------------------------------
 
 /* Comment */
+/*--------------------------------------------------
+Reset
+-------------------------------------------------- */
+/* defaule */
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+/* line 3, _default.scss */
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 4, _default.scss */
+ul li {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 5, _default.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 6, _default.scss */
+img {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  float: none;
+}
+
+/* line 7, _default.scss */
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 8, _default.scss */
+ul, ol, li {
+  list-style: none;
+}
+
+/* line 9, _default.scss */
+caption, th {
+  text-align: left;
+}
+
+/* line 10, _default.scss */
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+}
+
+/* line 11, _default.scss */
+q:before, q:after {
+  content: '';
+}
+
+/* line 12, _default.scss */
+abbr, acronym {
+  border: 0;
+}
+
+/* line 13, _default.scss */
+p {
+  padding: 0;
+  margin: 0px 0px 5px 0px;
+  margin: 0rem 0rem 0.3125rem 0rem;
+}
+
+/* line 14, _default.scss */
+button {
+  cursor: pointer;
+}
+
+/* line 15, _default.scss */
+h1, h2, h3, h4, h5, h6, img {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 16, _default.scss */
+html {
+  background: #FFF;
+}
+
+/* line 17, _default.scss */
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*--------------------------------------------------
+Font
+-------------------------------------------------- */
+/* font */
+@font-face {
+  font-family: 'NotoSansJP-DL';
+  src: url(font/NotoSansJP-DL.otf) format("opentype");
+}
+
+@font-face {
+  font-family: 'NotoSansJP-M';
+  src: url(font/NotoSansJP-M.otf) format("opentype");
+}
