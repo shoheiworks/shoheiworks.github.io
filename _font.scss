@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* font */
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+@font-face {
+  font-family: 'NotoSansJP-DL';
+  src: url(font/NotoSansJP-DL.otf) format("opentype");
+}
+@font-face {
+  font-family: 'NotoSansJP-M';
+  src: url(font/NotoSansJP-M.otf) format("opentype");
+}

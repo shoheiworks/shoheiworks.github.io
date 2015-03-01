@@ -1,4 +1,4 @@
-/* Author: DWP shoheiworks Version: 1.0 */
+/* Author: DWP shoheiworks Version: 1.0 : Portfolio */
 /*--------------------------------------------------
 Top Comment
 -------------------------------------------------- */
@@ -75,6 +75,7 @@ p {
   padding: 0;
   margin: 0px 0px 5px 0px;
   margin: 0rem 0rem 0.3125rem 0rem;
+  font-weight: normal;
 }
 
 /* line 14, _default.scss */
@@ -112,4 +113,222 @@ Font
 @font-face {
   font-family: 'NotoSansJP-M';
   src: url(font/NotoSansJP-M.otf) format("opentype");
+}
+
+/* line 24, style.scss */
+#baseBox {
+  width: 1024px;
+  height: 780px;
+  margin: 0 auto;
+  padding: 240px 0 0 0;
+  background-color: #fcfaf9;
+  position: relative;
+  box-sizing: border-box;
+  /*z-index: 1;*/
+}
+
+/*--------------------------------------------------
+Style
+-------------------------------------------------- */
+/* line 37, style.scss */
+body {
+  font-family: 'NotoSansJP-M', serif;
+}
+
+/*--------------------------------------------------
+Comp
+-------------------------------------------------- */
+/* line 44, style.scss */
+#compBox #nameBox {
+  position: absolute;
+  top: 26px;
+  right: 80px;
+  color: #666666;
+  letter-spacing: 0.01em;
+  font-family: 'NotoSansJP-M';
+  font-size: 14px;
+}
+
+/* line 53, style.scss */
+#compBox #nameBox p {
+  margin: 0 0 4px 0;
+}
+
+/* line 56, style.scss */
+#compBox #nameBox span {
+  font-size: 10px;
+  margin: -19px 0 0 100px;
+  display: block;
+}
+
+/* line 61, style.scss */
+#compBox aside {
+  width: 270px;
+  height: 76px;
+  background-color: #FFFFFF;
+  margin: 0;
+  padding: 12px 0 12px 18px;
+  position: absolute;
+  top: 100px;
+  left: 700px;
+  color: #666666;
+  font-size: 18px;
+  font-family: 'NotoSansJP-M';
+  letter-spacing: 0.02em;
+  line-height: 1.3em;
+  box-shadow: 2px 2px 3px #bbbbbb;
+  box-sizing: border-box;
+}
+
+/* line 78, style.scss */
+#compBox #worksBox {
+  width: 1024px;
+  height: 440px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 0 0 22px;
+  position: absolute;
+  top: 234px;
+  left: 0px;
+}
+
+/* line 88, style.scss */
+#compBox #worksBox h1, #compBox #otherBox h1 {
+  font-size: 36px;
+  color: #666666;
+  font-family: 'NotoSansJP-M';
+  margin: 0;
+}
+
+/* line 94, style.scss */
+#compBox #worksBox h3 {
+  font-size: 30px;
+  color: #7b7b79;
+  font-family: 'Myriad Pro';
+}
+
+/* line 99, style.scss */
+#compBox #worksBox #web, #compBox #worksBox #android {
+  width: 440px;
+  height: 440px;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  box-shadow: 2px 2px 3px #bbbbbb;
+  margin: 0 12px 0 28px;
+  float: left;
+  position: relative;
+}
+
+/* line 109, style.scss */
+#compBox #worksBox #web h1, #compBox #worksBox #android h1 {
+  padding: 0;
+  margin: 12px 0 0 12px;
+  letter-spacing: 0;
+}
+
+/* web */
+/* line 115, style.scss */
+#compBox #worksBox #web ul {
+  margin: 16px 0 0 24px;
+  padding: 0;
+}
+
+/* line 119, style.scss */
+#compBox #worksBox #web li a {
+  letter-spacing: 0.03em;
+  font-family: 'NotoSansJP-M';
+  color: #888888;
+}
+
+/* line 124, style.scss */
+#compBox #worksBox #web img {
+  width: 440px;
+  height: 262px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid #cccccc;
+}
+
+/* Android */
+/* line 133, style.scss */
+#compBox #worksBox #android img {
+  overflow: hidden;
+}
+
+/* line 136, style.scss */
+#compBox #worksBox #android .thImg {
+  width: 72px;
+  height: 72px;
+  border: none;
+  position: absolute;
+  top: 80px;
+  left: 44px;
+}
+
+/* line 144, style.scss */
+#compBox #worksBox #android ul {
+  position: absolute;
+  top: 84px;
+  left: 140px;
+}
+
+/* line 149, style.scss */
+#compBox #worksBox #android li {
+  font-size: 18px;
+  font-family: 'NotoSansJP-M';
+  color: #888888;
+}
+
+/* line 154, style.scss */
+#compBox #worksBox #android a {
+  font-size: 14px;
+  font-family: 'NotoSansJP-M';
+  color: #888888;
+  margin: 0 0 0 10px;
+}
+
+/* line 163, style.scss */
+#compBox #worksBox #android .appImg01-1,
+#compBox #worksBox #android .appImg01-2,
+#compBox #worksBox #android .appImg02-1,
+#compBox #worksBox #android .appImg02-2 {
+  width: 162px;
+  height: 270px;
+}
+
+/* line 168, style.scss */
+#compBox #worksBox #android .appImg01-1,
+#compBox #worksBox #android .appImg01-2 {
+  position: absolute;
+  top: 170px;
+  left: 44px;
+}
+
+/* line 174, style.scss */
+#compBox #worksBox #android .appImg02-1,
+#compBox #worksBox #android .appImg02-2 {
+  position: absolute;
+  top: 170px;
+  left: 234px;
+}
+
+/* other */
+/* line 180, style.scss */
+#compBox #otherBox {
+  width: 974px;
+  height: 120px;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  box-shadow: 2px 2px 3px #bbbbbb;
+  margin: 0 12px 0 28px;
+  padding: 0 0 0 22px;
+  position: absolute;
+  top: 720px;
+  left: 0px;
+}
+
+/* line 192, style.scss */
+.mb7 {
+  margin: 0 0 7px 0;
 }
