@@ -19,11 +19,48 @@ Reset
 Font
 -------------------------------------------------- */
 @import '_font.scss';
+h1, h2, h3 {letter-spacing: 0.02em}
 
+
+/*--------------------------------------------------
+Link
+-------------------------------------------------- */
+a, a:hover, a:visited {text-decoration: none; color: #666666;}
+
+/*--------------------------------------------------
+Color
+-------------------------------------------------- */
+.colO {color: #ff7820;}
+.colB {color: #1c83de;}
+.colP {color: #f96480;}
+
+/*--------------------------------------------------
+JavaScript
+-------------------------------------------------- */
+#openBox, #startBox, #compBox {
+	display: none;
+}
+
+/*--------------------------------------------------
+Style
+-------------------------------------------------- */
+html {background-color: #fcfaf9;}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'NotoSansJP-M', serif;
+}
+footer {
+	position: absolute;
+	bottom: 30px;
+	right: 20px;
+	font: #dddddd;
+	font-size: 10px;
+}
 
 #baseBox {
 	width: 1024px;
-	height: 780px;
+	height: 920px;
 	margin: 0 auto;
 	padding: 240px 0 0 0;
 	background-color: #fcfaf9;
@@ -32,10 +69,31 @@ Font
 	/*z-index: 1;*/
 }
 /*--------------------------------------------------
-Style
+Open
 -------------------------------------------------- */
-body {
-	font-family: 'NotoSansJP-M', serif;
+#openBox {
+	width: 516px;
+	height: 300px;
+	margin: 0 auto 0;
+	background:	#FFFFFF;
+	box-shadow: 1px 1px 2px #bbbbbb;
+	box-sizing: border-box;
+}
+#openBox h1, #openBox h2 {
+	text-align: center;
+	font-family: 'NotoSansJP-M';
+	font-weight: normal;
+	margin: 0;
+}
+#openBox h1 {
+	font-size: 37px ;	
+	color: #898989;
+	margin: 0;
+	padding: 104px 0 0 0;
+}
+#openBox h2 {
+	font-size: 20px ;	
+	color: #666666;
 }
 
 /*--------------------------------------------------
@@ -44,7 +102,7 @@ Comp
 #compBox #nameBox {
 	position: absolute;
 	top: 26px;
-	right: 80px;
+	right: 50px;
 	color: #666666;
 	letter-spacing: 0.01em;
 	font-family: 'NotoSansJP-M';
@@ -61,19 +119,20 @@ Comp
 #compBox aside {
 	width: 270px;
 	height: 76px;
-	background-color: #FFFFFF;
+	/*background-color: #FFFFFF;*/
 	margin: 0;
 	padding: 12px 0 12px 18px;
 	position: absolute;
-	top: 100px;
+	top: 80px;
 	left: 700px;
 	color: #666666;
 	font-size: 18px;
 	font-family: 'NotoSansJP-M';
 	letter-spacing: 0.02em;
 	line-height: 1.3em;
-	box-shadow: 2px 2px 3px #bbbbbb;
+	/*box-shadow: 2px 2px 3px #bbbbbb;*/
 	box-sizing: border-box;
+	text-align: right;
 }
 #compBox #worksBox {
 	width: 1024px;
@@ -113,7 +172,7 @@ Comp
 }
 /* web */
 #compBox #worksBox #web ul {
-	margin: 16px 0 0 24px;;
+	margin: 16px 0 4px 24px;;
 	padding: 0;
 }
 #compBox #worksBox #web li a {
@@ -163,6 +222,7 @@ Comp
 #compBox #worksBox #android .appImg02-2 {
 	width: 162px;
 	height: 270px;
+	border: 1px solid #cccccc;
 }
 #compBox #worksBox #android .appImg01-1 ,
 #compBox #worksBox #android .appImg01-2 {
@@ -178,16 +238,21 @@ Comp
 }
 /* other */
 #compBox #otherBox {
-	width: 974px;
+	width: 924px;
 	height: 120px;
 	box-sizing: border-box;
 	background-color: #FFFFFF;
 	box-shadow: 2px 2px 3px #bbbbbb;
-	margin:0 12px 0 28px;
+	margin:0 12px 0 48px;
 	padding: 0 0 0 22px;
 	position: absolute;
 	top: 720px;
 	left: 0px;
+}
+#compBox #otherBox li a {
+	letter-spacing: 0.03em;
+	font-family: 'NotoSansJP-M';
+	color: #888888;
 }
 .mb7 {
 	margin: 0 0 7px 0;

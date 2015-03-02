@@ -115,10 +115,74 @@ Font
   src: url(font/NotoSansJP-M.otf) format("opentype");
 }
 
-/* line 24, style.scss */
+/* line 22, style.scss */
+h1, h2, h3 {
+  letter-spacing: 0.02em;
+}
+
+/*--------------------------------------------------
+Link
+-------------------------------------------------- */
+/* line 28, style.scss */
+a, a:hover, a:visited {
+  text-decoration: none;
+  color: #666666;
+}
+
+/*--------------------------------------------------
+Color
+-------------------------------------------------- */
+/* line 33, style.scss */
+.colO {
+  color: #ff7820;
+}
+
+/* line 34, style.scss */
+.colB {
+  color: #1c83de;
+}
+
+/* line 35, style.scss */
+.colP {
+  color: #f96480;
+}
+
+/*--------------------------------------------------
+JavaScript
+-------------------------------------------------- */
+/* line 40, style.scss */
+#openBox, #startBox, #compBox {
+  display: none;
+}
+
+/*--------------------------------------------------
+Style
+-------------------------------------------------- */
+/* line 47, style.scss */
+html {
+  background-color: #fcfaf9;
+}
+
+/* line 48, style.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'NotoSansJP-M', serif;
+}
+
+/* line 53, style.scss */
+footer {
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+  font: #eeeeee;
+  font-size: 10px;
+}
+
+/* line 61, style.scss */
 #baseBox {
   width: 1024px;
-  height: 780px;
+  height: 920px;
   margin: 0 auto;
   padding: 240px 0 0 0;
   background-color: #fcfaf9;
@@ -128,59 +192,87 @@ Font
 }
 
 /*--------------------------------------------------
-Style
+Open
 -------------------------------------------------- */
-/* line 37, style.scss */
-body {
-  font-family: 'NotoSansJP-M', serif;
+/* line 74, style.scss */
+#openBox {
+  width: 516px;
+  height: 300px;
+  margin: 0 auto 0;
+  background: #FFFFFF;
+  box-shadow: 1px 1px 2px #bbbbbb;
+  box-sizing: border-box;
+}
+
+/* line 82, style.scss */
+#openBox h1, #openBox h2 {
+  text-align: center;
+  font-family: 'NotoSansJP-M';
+  font-weight: normal;
+  margin: 0;
+}
+
+/* line 88, style.scss */
+#openBox h1 {
+  font-size: 37px;
+  color: #898989;
+  margin: 0;
+  padding: 104px 0 0 0;
+}
+
+/* line 94, style.scss */
+#openBox h2 {
+  font-size: 20px;
+  color: #666666;
 }
 
 /*--------------------------------------------------
 Comp
 -------------------------------------------------- */
-/* line 44, style.scss */
+/* line 102, style.scss */
 #compBox #nameBox {
   position: absolute;
   top: 26px;
-  right: 80px;
+  right: 50px;
   color: #666666;
   letter-spacing: 0.01em;
   font-family: 'NotoSansJP-M';
   font-size: 14px;
 }
 
-/* line 53, style.scss */
+/* line 111, style.scss */
 #compBox #nameBox p {
   margin: 0 0 4px 0;
 }
 
-/* line 56, style.scss */
+/* line 114, style.scss */
 #compBox #nameBox span {
   font-size: 10px;
   margin: -19px 0 0 100px;
   display: block;
 }
 
-/* line 61, style.scss */
+/* line 119, style.scss */
 #compBox aside {
   width: 270px;
   height: 76px;
-  background-color: #FFFFFF;
+  /*background-color: #FFFFFF;*/
   margin: 0;
   padding: 12px 0 12px 18px;
   position: absolute;
-  top: 100px;
+  top: 80px;
   left: 700px;
   color: #666666;
   font-size: 18px;
   font-family: 'NotoSansJP-M';
   letter-spacing: 0.02em;
   line-height: 1.3em;
-  box-shadow: 2px 2px 3px #bbbbbb;
+  /*box-shadow: 2px 2px 3px #bbbbbb;*/
   box-sizing: border-box;
+  text-align: right;
 }
 
-/* line 78, style.scss */
+/* line 137, style.scss */
 #compBox #worksBox {
   width: 1024px;
   height: 440px;
@@ -192,7 +284,7 @@ Comp
   left: 0px;
 }
 
-/* line 88, style.scss */
+/* line 147, style.scss */
 #compBox #worksBox h1, #compBox #otherBox h1 {
   font-size: 36px;
   color: #666666;
@@ -200,14 +292,14 @@ Comp
   margin: 0;
 }
 
-/* line 94, style.scss */
+/* line 153, style.scss */
 #compBox #worksBox h3 {
   font-size: 30px;
   color: #7b7b79;
   font-family: 'Myriad Pro';
 }
 
-/* line 99, style.scss */
+/* line 158, style.scss */
 #compBox #worksBox #web, #compBox #worksBox #android {
   width: 440px;
   height: 440px;
@@ -219,7 +311,7 @@ Comp
   position: relative;
 }
 
-/* line 109, style.scss */
+/* line 168, style.scss */
 #compBox #worksBox #web h1, #compBox #worksBox #android h1 {
   padding: 0;
   margin: 12px 0 0 12px;
@@ -227,20 +319,20 @@ Comp
 }
 
 /* web */
-/* line 115, style.scss */
+/* line 174, style.scss */
 #compBox #worksBox #web ul {
-  margin: 16px 0 0 24px;
+  margin: 16px 0 4px 24px;
   padding: 0;
 }
 
-/* line 119, style.scss */
+/* line 178, style.scss */
 #compBox #worksBox #web li a {
   letter-spacing: 0.03em;
   font-family: 'NotoSansJP-M';
   color: #888888;
 }
 
-/* line 124, style.scss */
+/* line 183, style.scss */
 #compBox #worksBox #web img {
   width: 440px;
   height: 262px;
@@ -250,18 +342,13 @@ Comp
   border-top: 1px solid #cccccc;
 }
 
-/* line 132, style.scss */
-#worksWeb01 {
-  display: block;
-}
-
 /* Android */
-/* line 134, style.scss */
+/* line 192, style.scss */
 #compBox #worksBox #android img {
   overflow: hidden;
 }
 
-/* line 137, style.scss */
+/* line 195, style.scss */
 #compBox #worksBox #android .thImg {
   width: 72px;
   height: 72px;
@@ -271,21 +358,21 @@ Comp
   left: 44px;
 }
 
-/* line 145, style.scss */
+/* line 203, style.scss */
 #compBox #worksBox #android ul {
   position: absolute;
   top: 84px;
   left: 140px;
 }
 
-/* line 150, style.scss */
+/* line 208, style.scss */
 #compBox #worksBox #android li {
   font-size: 18px;
   font-family: 'NotoSansJP-M';
   color: #888888;
 }
 
-/* line 155, style.scss */
+/* line 213, style.scss */
 #compBox #worksBox #android a {
   font-size: 14px;
   font-family: 'NotoSansJP-M';
@@ -293,16 +380,17 @@ Comp
   margin: 0 0 0 10px;
 }
 
-/* line 164, style.scss */
+/* line 222, style.scss */
 #compBox #worksBox #android .appImg01-1,
 #compBox #worksBox #android .appImg01-2,
 #compBox #worksBox #android .appImg02-1,
 #compBox #worksBox #android .appImg02-2 {
   width: 162px;
   height: 270px;
+  border: 1px solid #cccccc;
 }
 
-/* line 169, style.scss */
+/* line 228, style.scss */
 #compBox #worksBox #android .appImg01-1,
 #compBox #worksBox #android .appImg01-2 {
   position: absolute;
@@ -310,7 +398,7 @@ Comp
   left: 44px;
 }
 
-/* line 175, style.scss */
+/* line 234, style.scss */
 #compBox #worksBox #android .appImg02-1,
 #compBox #worksBox #android .appImg02-2 {
   position: absolute;
@@ -319,21 +407,28 @@ Comp
 }
 
 /* other */
-/* line 181, style.scss */
+/* line 240, style.scss */
 #compBox #otherBox {
-  width: 974px;
+  width: 924px;
   height: 120px;
   box-sizing: border-box;
   background-color: #FFFFFF;
   box-shadow: 2px 2px 3px #bbbbbb;
-  margin: 0 12px 0 28px;
+  margin: 0 12px 0 48px;
   padding: 0 0 0 22px;
   position: absolute;
   top: 720px;
   left: 0px;
 }
 
-/* line 193, style.scss */
+/* line 252, style.scss */
+#compBox #otherBox li a {
+  letter-spacing: 0.03em;
+  font-family: 'NotoSansJP-M';
+  color: #888888;
+}
+
+/* line 257, style.scss */
 .mb7 {
   margin: 0 0 7px 0;
 }
