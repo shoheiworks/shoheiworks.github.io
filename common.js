@@ -13,7 +13,7 @@ function showOpenBox(){
 function showCompBox(){
     $(function(){
         $("#openBox").fadeOut(1600, function(){
-        	$("#compBox").fadeIn(2600);
+        	$("#compBox").fadeIn(2000);
         });
     });
 };
