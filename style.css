@@ -250,13 +250,18 @@ Comp
   border-top: 1px solid #cccccc;
 }
 
+/* line 132, style.scss */
+#worksWeb01 {
+  display: block;
+}
+
 /* Android */
-/* line 133, style.scss */
+/* line 134, style.scss */
 #compBox #worksBox #android img {
   overflow: hidden;
 }
 
-/* line 136, style.scss */
+/* line 137, style.scss */
 #compBox #worksBox #android .thImg {
   width: 72px;
   height: 72px;
@@ -266,21 +271,21 @@ Comp
   left: 44px;
 }
 
-/* line 144, style.scss */
+/* line 145, style.scss */
 #compBox #worksBox #android ul {
   position: absolute;
   top: 84px;
   left: 140px;
 }
 
-/* line 149, style.scss */
+/* line 150, style.scss */
 #compBox #worksBox #android li {
   font-size: 18px;
   font-family: 'NotoSansJP-M';
   color: #888888;
 }
 
-/* line 154, style.scss */
+/* line 155, style.scss */
 #compBox #worksBox #android a {
   font-size: 14px;
   font-family: 'NotoSansJP-M';
@@ -288,7 +293,7 @@ Comp
   margin: 0 0 0 10px;
 }
 
-/* line 163, style.scss */
+/* line 164, style.scss */
 #compBox #worksBox #android .appImg01-1,
 #compBox #worksBox #android .appImg01-2,
 #compBox #worksBox #android .appImg02-1,
@@ -297,7 +302,7 @@ Comp
   height: 270px;
 }
 
-/* line 168, style.scss */
+/* line 169, style.scss */
 #compBox #worksBox #android .appImg01-1,
 #compBox #worksBox #android .appImg01-2 {
   position: absolute;
@@ -305,7 +310,7 @@ Comp
   left: 44px;
 }
 
-/* line 174, style.scss */
+/* line 175, style.scss */
 #compBox #worksBox #android .appImg02-1,
 #compBox #worksBox #android .appImg02-2 {
   position: absolute;
@@ -314,7 +319,7 @@ Comp
 }
 
 /* other */
-/* line 180, style.scss */
+/* line 181, style.scss */
 #compBox #otherBox {
   width: 974px;
   height: 120px;
@@ -328,7 +333,7 @@ Comp
   left: 0px;
 }
 
-/* line 192, style.scss */
+/* line 193, style.scss */
 .mb7 {
   margin: 0 0 7px 0;
 }
