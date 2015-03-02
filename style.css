@@ -10,7 +10,6 @@ Top Comment
 Reset
 -------------------------------------------------- */
 /* defaule */
-@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 /* line 3, _default.scss */
 html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
   margin: 0;
@@ -105,14 +104,16 @@ fieldset {
 Font
 -------------------------------------------------- */
 /* font */
+/* @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css); */
+/*
 @font-face {
   font-family: 'NotoSansJP-DL';
   src: url(font/NotoSansJP-DL.otf) format("opentype");
 }
-
+*/
 @font-face {
   font-family: 'NotoSansJP-M';
-  src: url(font/NotoSansJP-M.otf) format("opentype");
+  src: url(font/NotoSansMCustam.otf) format("opentype"), url(font/NotoSansMCustam.woff) format("woff");
 }
 
 /* line 22, style.scss */
@@ -175,7 +176,7 @@ footer {
   position: absolute;
   bottom: 30px;
   right: 20px;
-  font: #eeeeee;
+  font: #dddddd;
   font-size: 10px;
 }
 
