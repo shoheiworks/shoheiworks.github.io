@@ -306,7 +306,7 @@ Comp
   height: 440px;
   box-sizing: border-box;
   background-color: #FFFFFF;
-  box-shadow: 2px 2px 3px #bbbbbb;
+  box-shadow: 1px 2px 2px #bbbbbb;
   margin: 0 12px 0 28px;
   float: left;
   position: relative;
@@ -395,7 +395,7 @@ Comp
 #compBox #worksBox #android .appImg01-1,
 #compBox #worksBox #android .appImg01-2 {
   position: absolute;
-  top: 170px;
+  top: 169px;
   left: 44px;
 }
 
