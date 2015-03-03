@@ -1,13 +1,13 @@
 window.onload = function(){
 	showOpenBox();
-	setTimeout("showCompBox();", 2200);
+	setTimeout("showCompBox();", 2000);
 	changeImg();
 //End
 }
 
 function showOpenBox(){
     $(function(){
-        $("#openBox").fadeIn(1000);
+        $("#openBox").fadeIn(800);
     });
 };
 function showCompBox(){
