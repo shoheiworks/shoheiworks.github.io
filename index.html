@@ -12,7 +12,11 @@
 	}
 </script>
 <style type="text/css">
-@font-face { font-family: 'NotoSansJP-M'; src: url(font/NotoSansJP-M.otf) format("opentype");}
+@font-face {
+	font-family: 'NotoSansJP-M';
+	src: url(font/NotoSansMCustam.otf) format("opentype"),
+	url(font/NotoSansMCustam.woff) format("woff");
+}
 body {width: 600px; font-family: 'NotoSansJP-M', serif; text-align: center; padding-top: 180px; background-color: #dddddd;}
 body,h1,p,input {margin:0 auto 12px;}
 input {font-size: 12px;}
@@ -28,10 +32,10 @@ input {font-size: 12px;}
 </style>
 </head>
 <body>
-	<div id="loading"><img src="hearts.svg"></div>
+	<div id="loading"><img src="hearts.svg"><p>Now Loding...</p></div>
 	<div id="container">
 	<h2>クリックしてパスワードを入力</h2>
-	<p>↓ Click! </p>
+	<p>↓ Click! ↓</p>
 	<input type="button" value="パスワードを入力してPortfolioへアクセス" onclick="gate();">
 	</div>
 </body>
