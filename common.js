@@ -1,10 +1,18 @@
 window.onload = function(){
+	dispNone();
 	showOpenBox();
 	setTimeout("showCompBox();", 2000);
 	changeImg();
+	showWorksBunner();
+	closeOverLayer();
 //End
 }
 
+function dispNone(){
+	$(function(){
+		$("#worksBunner").css("display","none");
+	});
+};
 function showOpenBox(){
     $(function(){
         $("#openBox").fadeIn(800);
@@ -52,6 +60,23 @@ function changeImg(){
 	$("#worksApp01Link").hover( function() {
 		$(".appImg02").css("display","none");
 		$(".appImg01").css("display","block");
+	});
+};
+
+function showWorksBunner(){
+	$(function(){
+		$("#otherBox #overBunner").click(function(){
+			$("#compBox").css("opacity","0.4"),
+			$("#worksBunner").show("fast");
+		});
+	});
+};
+function closeOverLayer(){
+	$(function(){
+		$(".close").click(function(){
+			$("#compBox").css("opacity","1"),
+			$("#worksBunner").hide("fast");
+		});
 	});
 };
 

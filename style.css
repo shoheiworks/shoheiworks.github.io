@@ -3,8 +3,7 @@
 Top Comment
 -------------------------------------------------- */
 /* Second Comment
---------------------------------------------------
-
+-------------------------------------------------- */
 /* Comment */
 /*--------------------------------------------------
 Reset
@@ -175,8 +174,8 @@ body {
 footer {
   position: absolute;
   bottom: 30px;
-  right: 20px;
-  font: #dddddd;
+  right: 48px;
+  color: #555555;
   font-size: 10px;
 }
 
@@ -189,7 +188,7 @@ footer {
   background-color: #fcfaf9;
   position: relative;
   box-sizing: border-box;
-  /*z-index: 1;*/
+  z-index: 1;
 }
 
 /*--------------------------------------------------
@@ -231,6 +230,13 @@ Open
 Comp
 -------------------------------------------------- */
 /* line 102, style.scss */
+#compBox {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+/* line 107, style.scss */
 #compBox #nameBox {
   position: absolute;
   top: 26px;
@@ -241,19 +247,19 @@ Comp
   font-size: 14px;
 }
 
-/* line 111, style.scss */
+/* line 116, style.scss */
 #compBox #nameBox p {
   margin: 0 0 4px 0;
 }
 
-/* line 114, style.scss */
+/* line 119, style.scss */
 #compBox #nameBox span {
   font-size: 10px;
   margin: -19px 0 0 100px;
   display: block;
 }
 
-/* line 119, style.scss */
+/* line 124, style.scss */
 #compBox aside {
   width: 270px;
   height: 76px;
@@ -273,7 +279,7 @@ Comp
   text-align: right;
 }
 
-/* line 137, style.scss */
+/* line 142, style.scss */
 #compBox #worksBox {
   width: 1024px;
   height: 440px;
@@ -285,7 +291,7 @@ Comp
   left: 0px;
 }
 
-/* line 147, style.scss */
+/* line 152, style.scss */
 #compBox #worksBox h1, #compBox #otherBox h1 {
   font-size: 36px;
   color: #666666;
@@ -293,14 +299,14 @@ Comp
   margin: 0;
 }
 
-/* line 153, style.scss */
+/* line 158, style.scss */
 #compBox #worksBox h3 {
   font-size: 30px;
   color: #7b7b79;
   font-family: 'Myriad Pro';
 }
 
-/* line 158, style.scss */
+/* line 163, style.scss */
 #compBox #worksBox #web, #compBox #worksBox #android {
   width: 440px;
   height: 440px;
@@ -312,7 +318,7 @@ Comp
   position: relative;
 }
 
-/* line 168, style.scss */
+/* line 173, style.scss */
 #compBox #worksBox #web h1, #compBox #worksBox #android h1 {
   padding: 0;
   margin: 12px 0 0 12px;
@@ -320,20 +326,20 @@ Comp
 }
 
 /* web */
-/* line 174, style.scss */
+/* line 179, style.scss */
 #compBox #worksBox #web ul {
   margin: 16px 0 4px 24px;
   padding: 0;
 }
 
-/* line 178, style.scss */
+/* line 183, style.scss */
 #compBox #worksBox #web li a {
   letter-spacing: 0.03em;
   font-family: 'NotoSansJP-M';
   color: #888888;
 }
 
-/* line 183, style.scss */
+/* line 188, style.scss */
 #compBox #worksBox #web img {
   width: 440px;
   height: 262px;
@@ -344,12 +350,12 @@ Comp
 }
 
 /* Android */
-/* line 192, style.scss */
+/* line 197, style.scss */
 #compBox #worksBox #android img {
   overflow: hidden;
 }
 
-/* line 195, style.scss */
+/* line 200, style.scss */
 #compBox #worksBox #android .thImg {
   width: 72px;
   height: 72px;
@@ -359,21 +365,22 @@ Comp
   left: 44px;
 }
 
-/* line 203, style.scss */
+/* line 208, style.scss */
 #compBox #worksBox #android ul {
   position: absolute;
   top: 84px;
   left: 140px;
 }
 
-/* line 208, style.scss */
+/* line 213, style.scss */
 #compBox #worksBox #android li {
   font-size: 18px;
   font-family: 'NotoSansJP-M';
   color: #888888;
+  cursor: pointer;
 }
 
-/* line 213, style.scss */
+/* line 219, style.scss */
 #compBox #worksBox #android a {
   font-size: 14px;
   font-family: 'NotoSansJP-M';
@@ -381,7 +388,7 @@ Comp
   margin: 0 0 0 10px;
 }
 
-/* line 222, style.scss */
+/* line 228, style.scss */
 #compBox #worksBox #android .appImg01-1,
 #compBox #worksBox #android .appImg01-2,
 #compBox #worksBox #android .appImg02-1,
@@ -391,7 +398,7 @@ Comp
   border: 1px solid #cccccc;
 }
 
-/* line 228, style.scss */
+/* line 234, style.scss */
 #compBox #worksBox #android .appImg01-1,
 #compBox #worksBox #android .appImg01-2 {
   position: absolute;
@@ -399,7 +406,7 @@ Comp
   left: 44px;
 }
 
-/* line 234, style.scss */
+/* line 240, style.scss */
 #compBox #worksBox #android .appImg02-1,
 #compBox #worksBox #android .appImg02-2 {
   position: absolute;
@@ -408,7 +415,7 @@ Comp
 }
 
 /* other */
-/* line 240, style.scss */
+/* line 246, style.scss */
 #compBox #otherBox {
   width: 924px;
   height: 120px;
@@ -422,14 +429,86 @@ Comp
   left: 0px;
 }
 
-/* line 252, style.scss */
+/* line 258, style.scss */
+#compBox #otherBox h1 {
+  margin: 0 0 8px 0;
+}
+
+/* line 261, style.scss */
 #compBox #otherBox li a {
   letter-spacing: 0.03em;
   font-family: 'NotoSansJP-M';
   color: #888888;
 }
 
-/* line 257, style.scss */
+/*--------------------------------------------------
+OverView
+-------------------------------------------------- */
+/* line 270, style.scss */
+.close {
+  width: 36px;
+  height: 36px;
+  background: #FFFFFF;
+  padding: 4px 0 0 0;
+  box-sizing: border-box;
+  border: 1px solid #999999;
+  border-radius: 8px;
+  display: block;
+  float: right;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+/* overLayer
+-------------------------------------------------- */
+/* line 289, style.scss */
+#overLayer {
+  width: 100%;
+  height: 120%;
+  background: #eeeeee;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  display: none;
+}
+
+/* Second Comment
+-------------------------------------------------- */
+/* Bunner
+-------------------------------------------------- */
+/* line 305, style.scss */
+#worksBunner {
+  width: 900px;
+  box-sizing: border-box;
+  background: #eeeeee;
+  padding: 16px 20px;
+  position: absolute;
+  bottom: 152px;
+  left: 40px;
+  z-index: 100;
+  border-radius: 4px;
+  box-shadow: 1px 2px 2px #999999;
+  border: 1px solid #aaaaaa;
+}
+
+/* line 318, style.scss */
+#worksBunner img {
+  margin: 4px 8px 4px 0;
+  border: 1px solid #666666;
+}
+
+/* line 323, style.scss */
+#overBunner {
+  cursor: pointer;
+}
+
+/* Second Comment
+-------------------------------------------------- */
+/* line 328, style.scss */
 .mb7 {
   margin: 0 0 7px 0;
 }
