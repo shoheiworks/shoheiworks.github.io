@@ -271,7 +271,7 @@ OverView
 	width: 36px;
 	height: 36px;
 	background: #FFFFFF;
-	padding: 4px 0 0 0;
+	padding: 5px 0 0 0;
 	box-sizing: border-box;
 	border: 1px solid #999999;
 	border-radius: 8px;
@@ -282,6 +282,8 @@ OverView
 	position: absolute;
 	top: 16px;
 	right: 16px;
+	font-size: 18px;
+	font-weight: bold;
 }
 
 /* overLayer
@@ -297,9 +299,36 @@ OverView
 	display: none;
 }
 
-/* Second Comment
+/* worksApp
 -------------------------------------------------- */
+#worksApp01, #worksApp02 {
+	width: 900px;
+	margin: 0 0 60px 0;
+	box-sizing: border-box;
+	background: #eeeeee;
+	padding: 16px 20px;
+	z-index: 100;
+	border-radius:4px;
+	box-shadow: 1px 2px 2px #999999;
+	border: 1px solid #aaaaaa;
+	display: none;
+	position: absolute;
+	top: 180px;
+	left: 40px;
+}
 
+/* worksApp01 */
+#worksApp01 {
+
+}
+
+/* worksApp02 */
+#worksApp02 {
+
+}
+#worksApp01, #worksApp02 img {
+	margin: 0 0 6px 0;
+}
 /* Bunner
 -------------------------------------------------- */
 #worksBunner {
@@ -325,7 +354,8 @@ OverView
 
 /* Second Comment
 -------------------------------------------------- */
-
+.fl {float: left;}
+.fr {float: right;}
 .mb7 {
 	margin: 0 0 7px 0;
 }
