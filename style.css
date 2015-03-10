@@ -493,22 +493,23 @@ OverView
   border-radius: 4px;
   box-shadow: 1px 2px 2px #999999;
   border: 1px solid #aaaaaa;
+  display: none;
 }
 
-/* line 318, style.scss */
+/* line 319, style.scss */
 #worksBunner img {
   margin: 4px 8px 4px 0;
   border: 1px solid #666666;
 }
 
-/* line 323, style.scss */
+/* line 324, style.scss */
 #overBunner {
   cursor: pointer;
 }
 
 /* Second Comment
 -------------------------------------------------- */
-/* line 328, style.scss */
+/* line 329, style.scss */
 .mb7 {
   margin: 0 0 7px 0;
 }
