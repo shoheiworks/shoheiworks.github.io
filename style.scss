@@ -25,11 +25,18 @@ h1, h2, h3 {letter-spacing: 0.02em}
 /*--------------------------------------------------
 Link
 -------------------------------------------------- */
-a, a:hover, a:visited {text-decoration: none; color: #666666;}
-
+a, a:hover, a:visited {
+	color: #888888;
+	text-decoration: none;
+	cursor: pointer;
+}
+a:hover {
+	color: #579999;
+}
 /*--------------------------------------------------
 Color
 -------------------------------------------------- */
+p {color: #888888;}
 .colO {color: #ff7820;}
 .colB {color: #1c83de;}
 .colP {color: #f96480;}
@@ -185,6 +192,9 @@ Comp
 	font-family: 'NotoSansJP-M';
 	color: #888888;
 }
+#compBox #worksBox #web li a:hover {
+	color: #579999;
+}
 #compBox #worksBox #web img {
 	width: 440px;
 	height: 262px;
@@ -284,20 +294,11 @@ OverView
 	right: 16px;
 	font-size: 18px;
 	font-weight: bold;
+	box-shadow: 0px 0px 1px #222222;
 }
 
 /* overLayer
 -------------------------------------------------- */
-#overLayer {
-	width: 100%;
-	height: 120%;
-	background: #eeeeee;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 50;
-	display: none;
-}
 
 /* worksApp
 -------------------------------------------------- */
@@ -316,17 +317,7 @@ OverView
 	top: 180px;
 	left: 40px;
 }
-
-/* worksApp01 */
-#worksApp01 {
-
-}
-
-/* worksApp02 */
-#worksApp02 {
-
-}
-#worksApp01, #worksApp02 img {
+#worksApp01 img, #worksApp02 img {
 	margin: 0 0 6px 0;
 }
 /* Bunner
@@ -350,7 +341,7 @@ OverView
 	border: 1px solid #666666;
 }
 
-#overBunner {cursor: pointer;}
+#overBunner { cursor: pointer; }
 
 /* Second Comment
 -------------------------------------------------- */

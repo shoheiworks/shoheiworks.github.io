@@ -125,24 +125,35 @@ Link
 -------------------------------------------------- */
 /* line 28, style.scss */
 a, a:hover, a:visited {
+  color: #888888;
   text-decoration: none;
-  color: #666666;
+  cursor: pointer;
+}
+
+/* line 33, style.scss */
+a:hover {
+  color: #579999;
 }
 
 /*--------------------------------------------------
 Color
 -------------------------------------------------- */
-/* line 33, style.scss */
+/* line 39, style.scss */
+p {
+  color: #888888;
+}
+
+/* line 40, style.scss */
 .colO {
   color: #ff7820;
 }
 
-/* line 34, style.scss */
+/* line 41, style.scss */
 .colB {
   color: #1c83de;
 }
 
-/* line 35, style.scss */
+/* line 42, style.scss */
 .colP {
   color: #f96480;
 }
@@ -150,7 +161,7 @@ Color
 /*--------------------------------------------------
 JavaScript
 -------------------------------------------------- */
-/* line 40, style.scss */
+/* line 47, style.scss */
 #openBox, #startBox, #compBox {
   display: none;
 }
@@ -158,19 +169,19 @@ JavaScript
 /*--------------------------------------------------
 Style
 -------------------------------------------------- */
-/* line 47, style.scss */
+/* line 54, style.scss */
 html {
   background-color: #fcfaf9;
 }
 
-/* line 48, style.scss */
+/* line 55, style.scss */
 body {
   margin: 0;
   padding: 0;
   font-family: 'NotoSansJP-M', serif;
 }
 
-/* line 53, style.scss */
+/* line 60, style.scss */
 footer {
   position: absolute;
   bottom: 30px;
@@ -179,7 +190,7 @@ footer {
   font-size: 10px;
 }
 
-/* line 61, style.scss */
+/* line 68, style.scss */
 #baseBox {
   width: 1024px;
   height: 920px;
@@ -194,7 +205,7 @@ footer {
 /*--------------------------------------------------
 Open
 -------------------------------------------------- */
-/* line 74, style.scss */
+/* line 81, style.scss */
 #openBox {
   width: 516px;
   height: 300px;
@@ -204,7 +215,7 @@ Open
   box-sizing: border-box;
 }
 
-/* line 82, style.scss */
+/* line 89, style.scss */
 #openBox h1, #openBox h2 {
   text-align: center;
   font-family: 'NotoSansJP-M';
@@ -212,7 +223,7 @@ Open
   margin: 0;
 }
 
-/* line 88, style.scss */
+/* line 95, style.scss */
 #openBox h1 {
   font-size: 37px;
   color: #898989;
@@ -220,7 +231,7 @@ Open
   padding: 104px 0 0 0;
 }
 
-/* line 94, style.scss */
+/* line 101, style.scss */
 #openBox h2 {
   font-size: 20px;
   color: #666666;
@@ -229,14 +240,14 @@ Open
 /*--------------------------------------------------
 Comp
 -------------------------------------------------- */
-/* line 102, style.scss */
+/* line 109, style.scss */
 #compBox {
   width: 100%;
   height: 100%;
   opacity: 1;
 }
 
-/* line 107, style.scss */
+/* line 114, style.scss */
 #compBox #nameBox {
   position: absolute;
   top: 26px;
@@ -247,19 +258,19 @@ Comp
   font-size: 14px;
 }
 
-/* line 116, style.scss */
+/* line 123, style.scss */
 #compBox #nameBox p {
   margin: 0 0 4px 0;
 }
 
-/* line 119, style.scss */
+/* line 126, style.scss */
 #compBox #nameBox span {
   font-size: 10px;
   margin: -19px 0 0 100px;
   display: block;
 }
 
-/* line 124, style.scss */
+/* line 131, style.scss */
 #compBox aside {
   width: 270px;
   height: 76px;
@@ -279,7 +290,7 @@ Comp
   text-align: right;
 }
 
-/* line 142, style.scss */
+/* line 149, style.scss */
 #compBox #worksBox {
   width: 1024px;
   height: 440px;
@@ -291,7 +302,7 @@ Comp
   left: 0px;
 }
 
-/* line 152, style.scss */
+/* line 159, style.scss */
 #compBox #worksBox h1, #compBox #otherBox h1 {
   font-size: 36px;
   color: #666666;
@@ -299,14 +310,14 @@ Comp
   margin: 0;
 }
 
-/* line 158, style.scss */
+/* line 165, style.scss */
 #compBox #worksBox h3 {
   font-size: 30px;
   color: #7b7b79;
   font-family: 'Myriad Pro';
 }
 
-/* line 163, style.scss */
+/* line 170, style.scss */
 #compBox #worksBox #web, #compBox #worksBox #android {
   width: 440px;
   height: 440px;
@@ -318,7 +329,7 @@ Comp
   position: relative;
 }
 
-/* line 173, style.scss */
+/* line 180, style.scss */
 #compBox #worksBox #web h1, #compBox #worksBox #android h1 {
   padding: 0;
   margin: 12px 0 0 12px;
@@ -326,20 +337,25 @@ Comp
 }
 
 /* web */
-/* line 179, style.scss */
+/* line 186, style.scss */
 #compBox #worksBox #web ul {
   margin: 16px 0 4px 24px;
   padding: 0;
 }
 
-/* line 183, style.scss */
+/* line 190, style.scss */
 #compBox #worksBox #web li a {
   letter-spacing: 0.03em;
   font-family: 'NotoSansJP-M';
   color: #888888;
 }
 
-/* line 188, style.scss */
+/* line 195, style.scss */
+#compBox #worksBox #web li a:hover {
+  color: #579999;
+}
+
+/* line 198, style.scss */
 #compBox #worksBox #web img {
   width: 440px;
   height: 262px;
@@ -350,12 +366,12 @@ Comp
 }
 
 /* Android */
-/* line 197, style.scss */
+/* line 207, style.scss */
 #compBox #worksBox #android img {
   overflow: hidden;
 }
 
-/* line 200, style.scss */
+/* line 210, style.scss */
 #compBox #worksBox #android .thImg {
   width: 72px;
   height: 72px;
@@ -365,14 +381,14 @@ Comp
   left: 44px;
 }
 
-/* line 208, style.scss */
+/* line 218, style.scss */
 #compBox #worksBox #android ul {
   position: absolute;
   top: 84px;
   left: 140px;
 }
 
-/* line 213, style.scss */
+/* line 223, style.scss */
 #compBox #worksBox #android li {
   font-size: 18px;
   font-family: 'NotoSansJP-M';
@@ -380,7 +396,7 @@ Comp
   cursor: pointer;
 }
 
-/* line 219, style.scss */
+/* line 229, style.scss */
 #compBox #worksBox #android a {
   font-size: 14px;
   font-family: 'NotoSansJP-M';
@@ -388,7 +404,7 @@ Comp
   margin: 0 0 0 10px;
 }
 
-/* line 228, style.scss */
+/* line 238, style.scss */
 #compBox #worksBox #android .appImg01-1,
 #compBox #worksBox #android .appImg01-2,
 #compBox #worksBox #android .appImg02-1,
@@ -398,7 +414,7 @@ Comp
   border: 1px solid #cccccc;
 }
 
-/* line 234, style.scss */
+/* line 244, style.scss */
 #compBox #worksBox #android .appImg01-1,
 #compBox #worksBox #android .appImg01-2 {
   position: absolute;
@@ -406,7 +422,7 @@ Comp
   left: 44px;
 }
 
-/* line 240, style.scss */
+/* line 250, style.scss */
 #compBox #worksBox #android .appImg02-1,
 #compBox #worksBox #android .appImg02-2 {
   position: absolute;
@@ -415,7 +431,7 @@ Comp
 }
 
 /* other */
-/* line 246, style.scss */
+/* line 256, style.scss */
 #compBox #otherBox {
   width: 924px;
   height: 120px;
@@ -429,12 +445,12 @@ Comp
   left: 0px;
 }
 
-/* line 258, style.scss */
+/* line 268, style.scss */
 #compBox #otherBox h1 {
   margin: 0 0 8px 0;
 }
 
-/* line 261, style.scss */
+/* line 271, style.scss */
 #compBox #otherBox li a {
   letter-spacing: 0.03em;
   font-family: 'NotoSansJP-M';
@@ -444,7 +460,7 @@ Comp
 /*--------------------------------------------------
 OverView
 -------------------------------------------------- */
-/* line 270, style.scss */
+/* line 280, style.scss */
 .close {
   width: 36px;
   height: 36px;
@@ -462,25 +478,14 @@ OverView
   right: 16px;
   font-size: 18px;
   font-weight: bold;
+  box-shadow: 0px 0px 1px #222222;
 }
 
 /* overLayer
 -------------------------------------------------- */
-/* line 291, style.scss */
-#overLayer {
-  width: 100%;
-  height: 120%;
-  background: #eeeeee;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 50;
-  display: none;
-}
-
 /* worksApp
 -------------------------------------------------- */
-/* line 304, style.scss */
+/* line 305, style.scss */
 #worksApp01, #worksApp02 {
   width: 900px;
   margin: 0 0 60px 0;
@@ -497,16 +502,14 @@ OverView
   left: 40px;
 }
 
-/* worksApp01 */
-/* worksApp02 */
-/* line 329, style.scss */
-#worksApp01, #worksApp02 img {
-  margin: 0 0 4px 0;
+/* line 320, style.scss */
+#worksApp01 img, #worksApp02 img {
+  margin: 0 0 6px 0;
 }
 
 /* Bunner
 -------------------------------------------------- */
-/* line 334, style.scss */
+/* line 325, style.scss */
 #worksBunner {
   width: 900px;
   box-sizing: border-box;
@@ -522,30 +525,30 @@ OverView
   display: none;
 }
 
-/* line 348, style.scss */
+/* line 339, style.scss */
 #worksBunner img {
   margin: 4px 8px 4px 0;
   border: 1px solid #666666;
 }
 
-/* line 353, style.scss */
+/* line 344, style.scss */
 #overBunner {
   cursor: pointer;
 }
 
 /* Second Comment
 -------------------------------------------------- */
-/* line 357, style.scss */
+/* line 348, style.scss */
 .fl {
   float: left;
 }
 
-/* line 358, style.scss */
+/* line 349, style.scss */
 .fr {
   float: right;
 }
 
-/* line 359, style.scss */
+/* line 350, style.scss */
 .mb7 {
   margin: 0 0 7px 0;
 }
